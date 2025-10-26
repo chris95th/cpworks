@@ -9,81 +9,42 @@
 </head>
 <body>
   <header class="site-header">
-    <div class="container">
-      <a class="logo" href="#">Chris</a>
+    <div class="container header-inner">
+      <a class="logo" href="#hero">Chris</a>
       <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
-      <nav id="nav" class="site-nav">
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#about">About</a>
+      <nav id="nav" class="site-nav" aria-label="Primary">
+        <a href="#works">Works</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#experience">Experience</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main>
-    <section class="hero">
+  <main id="main" class="snap-container" tabindex="-1">
+    <section id="hero" class="section hero">
       <div class="container hero-content">
         <h1>Hi, I’m Chris</h1>
-        <p>Full‑stack developer building fast, accessible web experiences. I like clean code, competitive programming, and making things that scale.</p>
+        <p class="lead">Full‑stack developer building fast, accessible web experiences. I like clean code, competitive programming, and making things that scale.</p>
         <p class="cta">
-          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn" href="#works">See my work</a>
           <a class="btn ghost" href="#contact">Get in touch</a>
         </p>
+        <p class="muted">Scroll or use the dots on the right to navigate sections</p>
       </div>
     </section>
 
-    <section id="projects" class="container projects">
-      <h2>Selected Projects</h2>
-      <div class="grid">
-        <article class="card">
-          <h3>Project One</h3>
-          <p>Short description of project one. Link to repo or live demo.</p>
-          <p class="meta"><a href="#">GitHub</a> · <a href="#">Live</a></p>
-        </article>
+    <section id="works" class="section works">
+      <div class="container">
+        <h2>Selected Works</h2>
+        <div class="works-grid">
+          <article class="card work-card">
+            <h3>Project One</h3>
+            <p>Short description and tech used. Add links to repo or demo.</p>
+            <p class="meta"><a href="#">GitHub</a> · <a href="#">Live</a></p>
+          </article>
 
-        <article class="card">
-          <h3>Project Two</h3>
-          <p>Short description of project two. Use this space to summarise tech used.</p>
-          <p class="meta"><a href="#">GitHub</a> · <a href="#">Live</a></p>
-        </article>
-
-        <article class="card">
-          <h3>Project Three</h3>
-          <p>Another project summary — competitions, libraries, or special achievements.</p>
-          <p class="meta"><a href="#">GitHub</a> · <a href="#">Live</a></p>
-        </article>
-      </div>
-    </section>
-
-    <section id="skills" class="container skills">
-      <h2>Skills</h2>
-      <ul class="skill-list">
-        <li>JavaScript / TypeScript</li>
-        <li>React / Next.js</li>
-        <li>Node.js / Express</li>
-        <li>Python</li>
-        <li>Algorithms & Data Structures</li>
-      </ul>
-    </section>
-
-    <section id="about" class="container about">
-      <h2>About</h2>
-      <p>I’m Chris — I enjoy building reliable, well-tested software and learning new languages and tools. I compete in programming contests and contribute to open source when I can.</p>
-    </section>
-
-    <section id="contact" class="container contact">
-      <h2>Contact</h2>
-      <p>If you’d like to collaborate or hire me, email <a href="mailto:chris95th@example.com">chris95th@example.com</a> or connect on <a href="#">LinkedIn</a>.</p>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>© "Chris" — Built with ❤️ • <a href="https://github.com/chris95th/cpworks">Source</a></p>
-    </div>
-  </footer>
-
-  <script src="script.js" defer></script>
-</body>
-</html>
+          <article class="card work-card">
+            <h3>Project Two</h3>
+            <p>Short description and highlight (scaling, perf, algos).</p>
+            
