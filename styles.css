@@ -125,7 +125,7 @@ body{
 .hero--cover .hero-image{
   position: absolute;
   inset: 0;
-  background-image: url('/assets/cover.jpg');
+  background-image: url('assets/cover.jpg');
   background-size: cover;
   background-position: center right; /* focus to the right so content stays readable */
   filter: saturate(.95) contrast(.98);
