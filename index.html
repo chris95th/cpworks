@@ -22,7 +22,9 @@
   </header>
 
   <main id="main" class="snap-container" tabindex="-1">
-    <section id="hero" class="section hero">
+    <section id="hero" class="section hero hero--cover">
+      <div class="hero-image" aria-hidden="true"></div>
+
       <div class="container hero-content">
         <h1>Hi, I’m Chris</h1>
         <p class="lead">Full‑stack developer building fast, accessible web experiences. I like clean code, competitive programming, and making things that scale.</p>
@@ -47,4 +49,79 @@
           <article class="card work-card">
             <h3>Project Two</h3>
             <p>Short description and highlight (scaling, perf, algos).</p>
-            
+            <p class="meta"><a href="#">GitHub</a> · <a href="#">Live</a></p>
+          </article>
+
+          <article class="card work-card">
+            <h3>Project Three</h3>
+            <p>Competition project, open source contribution, or demo.</p>
+            <p class="meta"><a href="#">GitHub</a> · <a href="#">Live</a></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="section testimonials">
+      <div class="container">
+        <h2>Testimonials</h2>
+
+        <div class="testimonial-wrap" id="testimonial-wrap" aria-live="polite">
+          <button class="t-btn prev" id="t-prev" aria-label="Previous testimonial">‹</button>
+          <div class="testimonial">
+            <blockquote class="quote">“Chris shipped a production-ready feature quickly and with great quality.”</blockquote>
+            <p class="author">— Alex, Product Manager</p>
+          </div>
+          <button class="t-btn next" id="t-next" aria-label="Next testimonial">›</button>
+        </div>
+
+        <div class="t-controls">
+          <button class="dot" data-index="0" aria-label="testimonial 1"></button>
+          <button class="dot" data-index="1" aria-label="testimonial 2"></button>
+          <button class="dot" data-index="2" aria-label="testimonial 3"></button>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section experience">
+      <div class="container">
+        <h2>Experience</h2>
+        <ul class="timeline">
+          <li>
+            <strong>Software Engineer</strong> — Company A
+            <div class="muted">2023 — Present</div>
+            <p>Worked on backend services, APIs and reliability improvements.</p>
+          </li>
+          <li>
+            <strong>Full‑stack Engineer</strong> — Company B
+            <div class="muted">2020 — 2023</div>
+            <p>Built SPA frontends and helped migrate monolith to microservices.</p>
+          </li>
+          <li>
+            <strong>Competitive Programmer & OSS</strong>
+            <div class="muted">Ongoing</div>
+            <p>Participate in contests and contribute to open source tooling.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>If you’d like to collaborate or hire me, email <a href="mailto:chris95th@example.com">chris95th@example.com</a> or connect on <a href="#">LinkedIn</a>.</p>
+        <p class="muted">© Chris — Built with ❤️</p>
+      </div>
+    </section>
+  </main>
+
+  <aside class="nav-dots" aria-hidden="false">
+    <a class="dot-link" href="#hero" data-target="hero" aria-label="Go to hero"></a>
+    <a class="dot-link" href="#works" data-target="works" aria-label="Go to works"></a>
+    <a class="dot-link" href="#testimonials" data-target="testimonials" aria-label="Go to testimonials"></a>
+    <a class="dot-link" href="#experience" data-target="experience" aria-label="Go to experience"></a>
+    <a class="dot-link" href="#contact" data-target="contact" aria-label="Go to contact"></a>
+  </aside>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
