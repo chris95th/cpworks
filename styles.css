@@ -157,7 +157,7 @@ body{
     background-position: center top;
   }
   .hero--cover::before{
-    background: linear-gradient(180deg, rgba(230,249,255,0.7), rgba(230,249,255,0.86));
+    background: linear-gradient(180deg, rgba(230,249,255,0.7), rgba(230,249,255,0.5));
   }
   .hero h1{font-size:34px}
   .lead{max-width:100%}
