@@ -139,7 +139,7 @@ body{
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(230,249,255,0.86) 0%, rgba(230,249,255,0.45) 40%, rgba(8,48,71,0.15) 100%);
+  background: linear-gradient(90deg, rgba(230,249,255,0.76) 0%, rgba(230,249,255,0.3) 40%, rgba(8,48,71,0.10) 100%);
   z-index: 1;
   pointer-events: none;
 }
@@ -157,7 +157,7 @@ body{
     background-position: center top;
   }
   .hero--cover::before{
-    background: linear-gradient(180deg, rgba(230,249,255,0.92), rgba(230,249,255,0.86));
+    background: linear-gradient(180deg, rgba(230,249,255,0.7), rgba(230,249,255,0.86));
   }
   .hero h1{font-size:34px}
   .lead{max-width:100%}
