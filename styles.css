@@ -84,13 +84,8 @@ body{
   left: 0;
   width: 150%;
   height: 150%;
+}
 
-  /* 3. Re-apply margin/space below the video's content */
-.work-card--video h3 {
-  padding: 18px 18px 0 18px; /* Add padding back to the h3 */
-  margin-top: 0; /* Remove default margin top of h3 */
-}
-}
 .meta a{color:var(--accent-2);text-decoration:none}
 
 /* Testimonials */
